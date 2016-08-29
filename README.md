@@ -431,7 +431,10 @@ adb install <apk file>
         pkg: /data/local/tmp/SogouInput_android_v8.3_sweb.apk
 Success
 ```
-
+旧版本覆盖安装更新的版本
+```sh
+adb install -r -d [apk_file]
+```
 而如果状态为 `Failure` 则表示安装失败。常见安装失败输出代码、含义及可能的解决办法如下：
 
 | 输出                                               | 含义                                                                     | 解决办法                                        |
